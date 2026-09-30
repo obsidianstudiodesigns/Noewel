@@ -57,7 +57,7 @@ export const SERVICES: ServiceItem[] = [
       'Makeup tailored to complement your features and outfit'
     ],
     popular: false,
-    image: 'images/bridal-party.jpg',
+    image: 'images/bridal-party-v2.jpg',
     imagePosition: 'object-[center_35%]',
     flyerHighlight: 'Wedding Party',
   },
@@ -77,7 +77,8 @@ export const SERVICES: ServiceItem[] = [
       'Trial @ R400 extra'
     ],
     popular: false,
-    image: 'images/matric-farewell.jpg',
+    image: 'images/matric-farewell-v2.jpg',
+    imagePosition: 'object-[center_28%]',
     flyerHighlight: 'Special Occasion',
   },
   {
@@ -93,7 +94,8 @@ export const SERVICES: ServiceItem[] = [
       'All-day sweat and humidity resistance'
     ],
     popular: false,
-    image: 'images/evening-glam.jpg',
+    image: 'images/evening-glam-v2.jpg',
+    imagePosition: 'object-[center_30%]',
   },
   {
     id: 'mini-makeover',
@@ -126,7 +128,8 @@ export const SERVICES: ServiceItem[] = [
       'Deluxe lash set & setting treatment'
     ],
     popular: true,
-    image: 'images/hero-desktop.jpg',
+    image: 'images/luxe-glow-package.jpg',
+    imagePosition: 'object-[center_28%]',
     flyerHighlight: 'Signature Package',
   },
   // ——— Tanning services & products ———
@@ -147,6 +150,7 @@ export const SERVICES: ServiceItem[] = [
     ],
     popular: true,
     image: 'images/spray-tan.jpg',
+    imageHeight: 'aspect-[5/6]',
     flyerHighlight: 'Sun-kissed GLOW · R420',
   },
   {
@@ -183,7 +187,7 @@ export const SERVICES: ServiceItem[] = [
       'Please note: This hyper tingle lotion is not for sensitive skin'
     ],
     popular: false,
-    image: 'images/hot-tingle-flyer.jpg',
+    image: 'images/hot-tingle-flyer-v2.jpg',
     imageFit: 'full',
     flyerHighlight: 'Glow Hotter · R220',
   },
@@ -197,7 +201,8 @@ export const WORKBOOK_TRANSFORMATIONS: TransformationItem[] = [
   { id: 'trans-5', image: 'images/before-after-5.jpg' },
   { id: 'trans-6', image: 'images/before-after-6.jpg' },
   { id: 'trans-7', image: 'images/before-after-7.jpg' },
-  { id: 'trans-8', image: 'images/before-after-8.jpg' },
+  { id: 'trans-8', image: 'images/before-after-8-v2.jpg' },
+  { id: 'trans-9', image: 'images/before-after-9.jpg' },
 ];
 
 export const ABOUT_STORY = {

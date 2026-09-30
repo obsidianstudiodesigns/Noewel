@@ -67,7 +67,7 @@ export default function App() {
         {/* Brand Story & Mission (About us flyer extract) */}
         <AboutSection />
 
-        {/* Services Menu & Rates (Flyer 2 Professional Spray Tan highlight + Makeup Menu) */}
+        {/* Services Menu & Rates */}
         <ServicesSection onSelectServiceForBooking={handleSelectServiceForBooking} />
 
         {/* Client Workbook (Before & After Transformations 1 - 4) */}

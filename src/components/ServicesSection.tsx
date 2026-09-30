@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { SERVICES, BUSINESS_INFO } from '../data/services';
-import { Sun, Clock, Droplets, Check, MessageCircle, Calendar } from 'lucide-react';
+import { SERVICES } from '../data/services';
+import { Check, MessageCircle } from 'lucide-react';
 import { ServiceItem } from '../types';
 
 interface ServicesSectionProps {
@@ -21,7 +21,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       )
   ).slice().sort((a, b) => categoryOrder[a.category] - categoryOrder[b.category]);
 
-  const sprayTanService = SERVICES.find((s) => s.id === 'spray-tan')!;
 
   return (
     <section id="services" className="py-24 relative bg-[#FAF7F2]">
@@ -98,7 +97,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   className={`w-full overflow-hidden relative ${
                     service.imageFit === 'full'
                       ? 'bg-[#EADCCB]'
-                      : `${service.imageHeight ?? 'h-48'} bg-[#EFE8DD]`
+                      : `${service.imageHeight ?? 'aspect-[4/3]'} bg-[#EFE8DD]`
                   }`}
                 >
                   {service.imageFit === 'full' ? (
@@ -199,124 +198,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             </div>
           ))}
         </div>
-
-        {/* FEATURED SPOTLIGHT: Professional Spray Tan - Displayed after makeup services or when filtering tanning */}
-        {selectedFilter !== 'makeup' && (
-          <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#FAF5EE] via-[#F4ECE0] to-[#EFE4D4] border border-[#DFCBB0] p-6 sm:p-10 lg:p-12 shadow-xl relative overflow-hidden">
-            
-            {/* Subtle Background Glow */}
-            <div className="absolute -right-20 -top-20 w-80 h-80 bg-[#E8D4B8]/40 rounded-full blur-3xl pointer-events-none" />
-
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-              
-              {/* Left: Image */}
-              <div className="lg:col-span-5 relative">
-                <div className="rounded-2xl overflow-hidden border border-[#D8C09A] shadow-lg aspect-[3/4] relative bg-[#EADCCB]">
-                  <img
-                    src="images/spray-tan.jpg"
-                    alt="Noewel Sun-kissed Glow Professional Spray Tan"
-                    className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-                  
-                  {/* Floating Tag */}
-                  <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-[#FAF7F2]/95 border border-[#D6BC94] text-[10px] uppercase font-bold tracking-widest text-[#8A5E22]">
-                    Signature Treatment
-                  </div>
-
-                  <div className="absolute bottom-4 left-4 right-4 text-white text-center">
-                    <span className="font-script-luxury text-3xl sm:text-4xl text-[#F6E0C2] drop-shadow-md">
-                      Sun-kissed GLOW
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right: Spray Tan Details */}
-              <div className="lg:col-span-7 space-y-6">
-                
-                <div className="space-y-1">
-                  <span className="text-xs uppercase font-semibold tracking-[0.25em] text-[#8A5E22]">
-                    NOEWEL. Luxury Beauty
-                  </span>
-                  <h3 className="font-display-luxury text-3xl sm:text-4xl font-bold text-[#2A231E]">
-                    Professional Spray Tan
-                  </h3>
-                  <p className="font-serif-luxury text-xl sm:text-2xl text-[#4A3D36] italic">
-                    "A flawless, natural looking tan that enhances your confidence."
-                  </p>
-                </div>
-
-                {/* Price Callout */}
-                <div className="inline-flex items-baseline gap-3 py-2 px-6 rounded-2xl bg-[#FAF7F2] border border-[#D9C4A1] shadow-xs">
-                  <span className="text-xs uppercase tracking-widest text-[#695B52]">Only</span>
-                  <span className="font-display-luxury text-4xl sm:text-5xl font-bold text-[#8A5E22]">
-                    {sprayTanService.price}
-                  </span>
-                  <span className="text-xs uppercase tracking-wider text-[#695B52]">Per Spray Tan</span>
-                </div>
-
-                {/* 3 Pillar Features */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                  <div className="p-4 rounded-xl bg-[#FAF7F2]/90 border border-[#E2D1BD] text-center space-y-2">
-                    <div className="w-10 h-10 mx-auto rounded-full bg-[#F3E7D6] flex items-center justify-center text-[#936425]">
-                      <Sun className="w-5 h-5" />
-                    </div>
-                    <h4 className="font-display-luxury text-xs font-bold uppercase tracking-wider text-[#3B3029]">
-                      Natural Glow
-                    </h4>
-                    <p className="text-[11px] text-[#695C53] leading-tight">
-                      Golden undertones with zero orange cast or patchy fade.
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-[#FAF7F2]/90 border border-[#E2D1BD] text-center space-y-2">
-                    <div className="w-10 h-10 mx-auto rounded-full bg-[#F3E7D6] flex items-center justify-center text-[#936425]">
-                      <Clock className="w-5 h-5" />
-                    </div>
-                    <h4 className="font-display-luxury text-xs font-bold uppercase tracking-wider text-[#3B3029]">
-                      Long Lasting Results
-                    </h4>
-                    <p className="text-[11px] text-[#695C53] leading-tight">
-                      Lasts 7 to 10 days with effortless, natural wear-off.
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-[#FAF7F2]/90 border border-[#E2D1BD] text-center space-y-2">
-                    <div className="w-10 h-10 mx-auto rounded-full bg-[#F3E7D6] flex items-center justify-center text-[#936425]">
-                      <Droplets className="w-5 h-5" />
-                    </div>
-                    <h4 className="font-display-luxury text-xs font-bold uppercase tracking-wider text-[#3B3029]">
-                      Hydrating & Nourishing
-                    </h4>
-                    <p className="text-[11px] text-[#695C53] leading-tight">
-                      Infused with skin-loving botanicals for silky smooth touch.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Call to action */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
-                  <button
-                    onClick={() => onSelectServiceForBooking(sprayTanService)}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full btn-noewel-gold text-white text-xs font-semibold uppercase tracking-[0.2em] shadow-md hover:shadow-lg  active:scale-[0.99] transition-all cursor-pointer"
-                    id="spray-tan-book-glow-btn"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>Book Your Glow: 063 227 1637</span>
-                  </button>
-
-                  <span className="text-xs text-[#6B5D55]">
-                    Quick 30 min session · Preparation guide provided upon booking
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        )}
 
       </div>
     </section>
