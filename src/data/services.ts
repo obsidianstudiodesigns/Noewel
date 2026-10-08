@@ -7,7 +7,7 @@ export const BUSINESS_INFO = {
   email: 'marcelle@noewel.co.za',
   phoneDisplay: '063 227 1637',
   phoneRaw: '27632271637',
-  address: '2 Kiepersol Street, Jordania, Kroonstad, Free State, South Africa',
+  address: 'Kiepersol Street, Jordania, Kroonstad, South Africa',
   city: 'Kroonstad',
   country: 'South Africa',
   hours: 'Monday - Saturday: 08:30 – 17:30 (By Appointment)',
@@ -33,13 +33,13 @@ export const SERVICES: ServiceItem[] = [
     description: 'Timeless, romantic, and photo-ready bridal makeup designed to withstand tears of joy and last throughout your entire unforgettable wedding celebration.',
     features: [
       'Bridal makeup application on wedding day',
-      'Bridal trial',
+      'Consultation and bridal trial',
       'Premium lightweight mink-effect lashes',
       'Undertone analysis'
     ],
     popular: true,
-    image: 'images/bridal-glamour.jpg',
-    imagePosition: 'object-[center_18%]',
+    image: 'images/bridal-glamour-v2.jpg',
+    imagePosition: 'object-[center_20%]',
     flyerHighlight: 'Bridal Artistry',
   },
   {
@@ -77,8 +77,8 @@ export const SERVICES: ServiceItem[] = [
       'Trial @ R400 extra'
     ],
     popular: false,
-    image: 'images/matric-farewell-v2.jpg',
-    imagePosition: 'object-[center_28%]',
+    image: 'images/matric-farewell-v3.jpg',
+    imagePosition: 'object-[center_35%]',
     flyerHighlight: 'Special Occasion',
   },
   {
@@ -94,8 +94,8 @@ export const SERVICES: ServiceItem[] = [
       'All-day sweat and humidity resistance'
     ],
     popular: false,
-    image: 'images/evening-glam-v2.jpg',
-    imagePosition: 'object-[center_30%]',
+    image: 'images/evening-glam-v3.jpg',
+    imagePosition: 'object-[center_25%]',
   },
   {
     id: 'mini-makeover',
@@ -201,8 +201,8 @@ export const WORKBOOK_TRANSFORMATIONS: TransformationItem[] = [
   { id: 'trans-5', image: 'images/before-after-5.jpg' },
   { id: 'trans-6', image: 'images/before-after-6.jpg' },
   { id: 'trans-7', image: 'images/before-after-7.jpg' },
-  { id: 'trans-8', image: 'images/before-after-8-v2.jpg' },
-  { id: 'trans-9', image: 'images/before-after-9.jpg' },
+  { id: 'trans-8', image: 'images/before-after-8-v3.jpg' },
+  { id: 'trans-9', image: 'images/before-after-9-v2.jpg' },
 ];
 
 export const ABOUT_STORY = {

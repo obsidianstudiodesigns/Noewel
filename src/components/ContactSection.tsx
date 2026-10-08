@@ -41,13 +41,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenBooking })
                     Address
                   </span>
                   <p className="text-base font-medium text-[#2C2420] mt-0.5">
-                    2 Kiepersol Street
+                    Kiepersol Street
                   </p>
                   <p className="text-sm text-[#615349]">
-                    Jordania, Kroonstad, Free State, South Africa
+                    Jordania, Kroonstad, South Africa
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=2+Kiepersol+Street+Jordania+Kroonstad+South+Africa"
+                    href="https://www.google.com/maps/search/?api=1&query=Kiepersol+Street+Jordania+Kroonstad+South+Africa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs text-[#936425] hover:text-[#7A5822] font-semibold mt-2 underline"
@@ -170,7 +170,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenBooking })
               <div className="rounded-2xl overflow-hidden border border-[#D9C4A1] relative h-64 bg-[#EADDCB]">
                 {/* Embed OpenStreetMap / Interactive Map for Kroonstad */}
                 <iframe
-                  title="Noewel Location Map - 2 Kiepersol Street, Jordania, Kroonstad"
+                  title="Noewel Location Map - Kiepersol Street, Jordania, Kroonstad"
                   src="https://www.openstreetmap.org/export/embed.html?bbox=27.2000%2C-27.6700%2C27.2700%2C-27.6300&amp;layer=mapnik&amp;marker=-27.6500%2C27.2350"
                   className="w-full h-full border-0"
                   loading="lazy"
@@ -182,11 +182,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenBooking })
                       Noewel Studio
                     </p>
                     <p className="text-xs font-semibold text-[#2C2420]">
-                      2 Kiepersol Street, Jordania, Kroonstad
+                      Kiepersol Street, Jordania, Kroonstad
                     </p>
                   </div>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=2+Kiepersol+Street+Jordania+Kroonstad+South+Africa"
+                    href="https://www.google.com/maps/search/?api=1&query=Kiepersol+Street+Jordania+Kroonstad+South+Africa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-3 py-1.5 rounded-full bg-[#A8752D] hover:bg-[#8A5E22] text-white text-[10px] font-semibold uppercase tracking-wider transition-colors"

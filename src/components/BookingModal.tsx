@@ -49,7 +49,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     if (preferredDate) msg += `📅 *Preferred Date:* ${preferredDate}\n`;
     if (preferredTime) msg += `⏰ *Preferred Time:* ${preferredTime}\n`;
     if (notes.trim()) msg += `📝 *Notes / Occasion:* ${notes.trim()}\n`;
-    msg += `\n📍 *Location:* 2 Kiepersol Street, Jordania, Kroonstad\n`;
+    msg += `\n📍 *Location:* Kiepersol Street, Jordania, Kroonstad\n`;
     msg += `Thank you! Looking forward to confirming my appointment.`;
     return msg;
   };
