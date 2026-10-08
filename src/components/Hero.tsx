@@ -58,9 +58,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           {/* Luxury Description */}
           <p className="text-sm sm:text-base lg:text-lg text-white/90 font-light leading-relaxed max-w-xl mx-auto md:mx-0 drop-shadow-sm">
-            Welcome to <strong className="font-semibold text-white">NOEWEL</strong> by Marcelle Van Wyk. 
-            Bespoke bridal artistry, matric farewell glam, and natural streak-free spray tanning 
-            in Kroonstad crafted to let your natural beauty illuminate.
+            Welcome to <strong className="font-semibold text-white">NOEWEL</strong> by Marcelle Van Wyk — where beauty
+            is elevated into an experience. From luxury glam makeup and bespoke makeovers to bridal artistry,
+            matric farewell glam and natural, streak-free spray tanning, every service is thoughtfully created
+            to make you feel confident, radiant and effortlessly beautiful.
           </p>
 
           {/* Direct WhatsApp Booking & Exploration Actions */}
