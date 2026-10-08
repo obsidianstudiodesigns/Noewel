@@ -83,6 +83,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </a>
           </div>
 
+          {/* Credentials: training & memberships */}
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 sm:gap-4 pt-4">
+            <div className="flex w-full max-w-[19rem] sm:w-auto sm:max-w-none items-center gap-3 pl-1.5 pr-5 py-1.5 rounded-full bg-black/35 backdrop-blur-md border border-white/20">
+              <img
+                src="images/ubella-logo.png"
+                alt="Ubella logo"
+                className="w-14 h-14 rounded-full"
+              />
+              <div className="text-left leading-tight">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-[#E2B47A]">Professionally trained at</p>
+                <p className="font-display-luxury text-sm font-semibold tracking-[0.15em] text-white">UBELLA</p>
+              </div>
+            </div>
+
+            <div className="flex w-full max-w-[19rem] sm:w-auto sm:max-w-none items-center gap-3 pl-1.5 pr-5 py-1.5 rounded-full bg-black/35 backdrop-blur-md border border-white/20">
+              <img
+                src="images/bruidsgids-badge.png"
+                alt="Proud member of Bruidsgids & Wedding Guide 2026"
+                className="w-14 h-14"
+              />
+              <div className="text-left leading-tight">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-[#E2B47A]">Proud member of</p>
+                <p className="font-display-luxury text-sm font-semibold tracking-[0.05em] text-white">Bruidsgids &amp; Wedding Guide</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
