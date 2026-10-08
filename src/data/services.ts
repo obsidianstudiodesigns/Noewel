@@ -94,7 +94,7 @@ export const SERVICES: ServiceItem[] = [
       'All-day sweat and humidity resistance'
     ],
     popular: false,
-    image: 'images/evening-glam-v3.jpg',
+    image: 'images/evening-glam-v4.jpg',
     imagePosition: 'object-[center_25%]',
   },
   {
@@ -125,7 +125,7 @@ export const SERVICES: ServiceItem[] = [
     features: [
       'Full Body Professional Spray Tan session (done 24-48h prior)',
       'Full Face Luxury Event Makeup on event day',
-      'Deluxe lash set & setting treatment'
+      'Deluxe lash set'
     ],
     popular: true,
     image: 'images/luxe-glow-package.jpg',
@@ -194,6 +194,7 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const WORKBOOK_TRANSFORMATIONS: TransformationItem[] = [
+  { id: 'trans-10', image: 'images/before-after-10.jpg' },
   { id: 'trans-1', image: 'images/before-after-1.jpg' },
   { id: 'trans-2', image: 'images/before-after-2.jpg' },
   { id: 'trans-3', image: 'images/before-after-3.jpg' },
