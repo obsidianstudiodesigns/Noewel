@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noewel.co.za/sitemap.xml
