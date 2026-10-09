@@ -145,28 +145,51 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     </p>
                   )}
 
-                  <div className="flex items-baseline gap-2 pt-1">
-                    <span className="font-display-luxury text-2xl font-bold text-[#8A5E22]">
-                      {service.price}
-                    </span>
-                    {service.priceNote && (
-                      <span className="text-xs text-[#736459] font-light">
-                        ({service.priceNote})
+                  {service.priceList ? (
+                    <ul className="pt-1 divide-y divide-[#EFE5D8] border-y border-[#EFE5D8]">
+                      {service.priceList.map((row) => (
+                        <li key={row.label} className="flex items-baseline justify-between gap-3 py-1.5">
+                          <span className="text-xs text-[#4F443D]">{row.label}</span>
+                          <span className="font-display-luxury text-base font-bold text-[#8A5E22]">{row.price}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="flex items-baseline gap-2 pt-1">
+                      <span className="font-display-luxury text-2xl font-bold text-[#8A5E22]">
+                        {service.price}
                       </span>
-                    )}
-                    {service.duration && (
-                      <span className="ml-auto text-[11px] text-[#85766C] px-2 py-0.5 rounded-full bg-[#F3E8DB]">
-                        {service.duration}
-                      </span>
-                    )}
-                  </div>
+                      {service.priceNote && (
+                        <span className="text-xs text-[#736459] font-light">
+                          ({service.priceNote})
+                        </span>
+                      )}
+                      {service.duration && (
+                        <span className="ml-auto text-[11px] text-[#85766C] px-2 py-0.5 rounded-full bg-[#F3E8DB]">
+                          {service.duration}
+                        </span>
+                      )}
+                    </div>
+                  )}
 
                   <p className="text-xs sm:text-sm text-[#5C5047] font-light leading-relaxed">
                     {service.description}
                   </p>
+
+                  {service.notes && service.notes.length > 0 && (
+                    <ul className="space-y-1 pt-1">
+                      {service.notes.map((note) => (
+                        <li key={note} className="flex items-start gap-2 text-xs font-medium text-[#7F5319]">
+                          <Check className="w-3.5 h-3.5 text-[#A8752D] shrink-0 mt-0.5" />
+                          <span>{note}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
 
                 {/* Features Checklist */}
+                {service.features.length > 0 && (
                 <div className="space-y-2 pt-2 border-t border-[#EFE5D8]">
                   <p className="text-[10px] uppercase tracking-wider font-semibold text-[#8A5E22]">
                     Includes:
@@ -180,6 +203,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     ))}
                   </ul>
                 </div>
+                )}
 
                 {/* Booking Button */}
                 <div className="pt-4">

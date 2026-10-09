@@ -14,6 +14,10 @@ export interface ServiceItem {
   imageHeight?: string;
   imagePosition?: string;
   flyerHighlight?: string;
+  // Multi-line price table (e.g. sunbed sessions), shown instead of the single price
+  priceList?: { label: string; price: string }[];
+  // Short highlighted notes shown under the price list
+  notes?: string[];
 }
 
 export interface TransformationItem {

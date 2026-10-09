@@ -70,8 +70,10 @@ export const Footer: React.FC = () => {
               <li>Matric Farewell — <span className="text-[#6B4410]">R650</span></li>
               <li>Mini Makeover (Makeup + Hair) — <span className="text-[#6B4410]">R750</span></li>
               <li>Evening & Special Event Glam — <span className="text-[#6B4410]">R500</span></li>
-              <li>Ultimate Luxe Glow Package — <span className="text-[#6B4410]">R750</span></li>
+              <li>Ultimate Luxe Glow Package — <span className="text-[#6B4410]">R850</span></li>
               <li>Professional Spray Tan — <span className="text-[#6B4410]">R420</span></li>
+              <li>Standing Sunbed — <span className="text-[#6B4410]">from R55</span></li>
+              <li>Lay Down Sunbed — <span className="text-[#6B4410]">from R45</span></li>
               <li>Sunbed Tanning Lotion (100ml) — <span className="text-[#6B4410]">R150</span></li>
               <li>HOT Tingle Tanning Lotion (100ml) — <span className="text-[#6B4410]">R220</span></li>
             </ul>
